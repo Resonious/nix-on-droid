@@ -5,14 +5,14 @@
 with lib;
 
 let
-  defaultNixpkgsBranch = "nixos-23.05";
-  defaultNixOnDroidBranch = "release-23.05";
+  defaultNixpkgsBranch = "nixos-23.11";
+  defaultNixOnDroidBranch = "master";
 
   defaultNixpkgsChannel = "https://nixos.org/channels/${defaultNixpkgsBranch}";
-  defaultNixOnDroidChannel = "https://github.com/nix-community/nix-on-droid/archive/${defaultNixOnDroidBranch}.tar.gz";
+  defaultNixOnDroidChannel = "https://github.com/Resonious/nix-on-droid/archive/${defaultNixOnDroidBranch}.tar.gz";
 
   defaultNixpkgsFlake = "github:NixOS/nixpkgs/${defaultNixpkgsBranch}";
-  defaultNixOnDroidFlake = "github:nix-community/nix-on-droid/${defaultNixOnDroidBranch}";
+  defaultNixOnDroidFlake = "github:Resonious/nix-on-droid/${defaultNixOnDroidBranch}";
 in
 
 {
